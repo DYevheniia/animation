@@ -22,7 +22,7 @@ h1 {
 .letter {
     transform-style: preserve-3d;
     opacity: 0;
-    animation: rotate 8s ease-in 1s 1 normal forwards;
+    animation: rotate 7s ease-in 1s 1 normal forwards;
     display: inline-block;
     color: black;
 }
@@ -62,16 +62,16 @@ h1 {
     color: purple;
 }
 
-.cat{
+.cat {
     position: absolute;
-    width: 600rem;
-    top: 180rem;
+    width: 400rem;
+    top: 200rem;
     opacity: 0;
-    animation: line 10s ease-in 1s 1 normal;
+    animation: line 10s linear 1s 1 normal;
     transform: translate(-50%, 0);
 }
 
-.cat img{
+.cat img {
     width: 100%;
 }
 
@@ -97,13 +97,13 @@ h1 {
     40% {
         transform: rotate(75deg);
     }
-    
+
     50% {
         transform: rotate(270deg);
         opacity: 0;
     }
 
-    80%{
+    80% {
         opacity: 0;
     }
 
@@ -111,24 +111,24 @@ h1 {
         opacity: 1;
     }
 }
+
 @keyframes line {
-    0%{
+    0% {
         opacity: 0;
     }
-    30%{
+
+    30% {
         left: 0;
         opacity: 0;
     }
-    40%{
+
+    40% {
         opacity: .5;
-        
-    }
-    50%{
-        opacity: 1;
+
     }
 
-    100%{
-        left: 100%;
+    100% {
+        left: 110%;
         opacity: 1;
     }
 }
