@@ -5,6 +5,7 @@ html {
 body {
     margin: 0 auto;
     background: wheat;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -63,8 +64,8 @@ h1 {
 
 .cat{
     position: absolute;
-    width: 500rem;
-    top: 200rem;
+    width: 600rem;
+    top: 180rem;
     opacity: 0;
     animation: line 10s ease-in 1s 1 normal;
     transform: translate(-50%, 0);
@@ -116,15 +117,18 @@ h1 {
     }
     30%{
         left: 0;
+        opacity: 0;
+    }
+    40%{
+        opacity: .5;
+        
     }
     50%{
-        opacity: 0;
-    }
-    70%{
         opacity: 1;
     }
+
     100%{
         left: 100%;
-        opacity: 0;
+        opacity: 1;
     }
 }
